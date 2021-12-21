@@ -1,5 +1,5 @@
-let size = 1;
-renderBoxes(1);
+let size = 32;
+renderBoxes(32);
 
 
 let btn2 = document.querySelector("#btn2");
@@ -43,7 +43,7 @@ function renderBoxes(size) {
     for (let i = 0; i < (size * size); i++) {
         let box = document.createElement("div");
         box.className = "box";
-        box.style.width = (500 / size) - (2) + "px"; // subtract size from width of overall container + 2px for border
+        box.style.width = (500 / size) + "px"; // subtract size from width of overall container + 2px for border if there is one. Border is currently commented out
         document.getElementById("boxes-container").appendChild(box);
     }
 
@@ -61,7 +61,7 @@ function renderBoxes(size) {
 
     function handleClearClick() {
         boxes.forEach(box => {
-            box.style.backgroundColor = "white";
+            box.style.backgroundColor = "gray";
         });
     }
 }

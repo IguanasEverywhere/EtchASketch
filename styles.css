@@ -1,21 +1,69 @@
+body, button {
+    font-family: 'Yellowtail', cursive;
+}
+
+body {
+    background-color: rgb(236, 232, 232);
+}
+
+button {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red-section {
+    background-color: rgb(160, 17, 17);
+    width: 750px;
+    padding: 0 5% 3% 5%;
+    box-shadow: 5px 5px 5px 5px gray;
+    text-align: center;
+    color: rgb(207, 180, 26);
+    border-radius: 2%;
+}
 
 .main-section {
     display: flex;
     justify-content: center;
+    padding: 0;
+
 }
+
+/* .box {
+    border:1px solid black;
+} */
+
 #boxes-container {
     display: flex;
     width: 500px;
     height: 500px;
-    
     flex-wrap: wrap;
     align-items:stretch;
+    background-color: gray;
 }
 
-.box {
+.knobs {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
-
-    flex-grow: 1;
-
-    border:1px solid black;
-} 
+.left-knob, .right-knob {
+    width: 10%;
+    background-color: rgb(247, 242, 242);
+    border-radius: 50%;
+    border: 2px dotted gray;
+    box-shadow: 2px 2px 2px 2px black;
+}
